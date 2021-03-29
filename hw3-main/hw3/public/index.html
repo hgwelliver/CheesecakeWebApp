@@ -1,0 +1,112 @@
+<!-- Cheesecake Order Form -->
+<!-- Author: Haley Welliver -->
+
+<!DOCTYPE html>
+  <html>
+    <body>
+
+    <head>
+       <!-- connects to CSS file -->
+       <link rel="stylesheet" href="stylesheets/index.css">  
+          <!-- loads the jQuery library -->
+          <script
+             src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+          </script>
+    </head>
+
+    <!-- main header -->
+    <h1>Cheesecake Order Form</h1>
+
+    <!-- inserts image from wikimedia url -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake" width="200" height="200">
+    <br>
+
+    <!-- creates a table with 2 rows (quantity, topping) and 2 columns (dropdown, radio buttons) -->
+    <table id="table1">
+      <tr>
+        <td>Quantity</th>
+        <td>Topping</th>
+      </tr>
+      <tr>
+        <td>
+          <!-- dropdown menu to select quantity (6 options) -->
+          <select name="quantity" id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="5+">5+ (custom)</option>
+          </select>
+        </td>
+        <td>
+          <!-- displays 3 radio buttons (plain, cherry, chocolate) -->
+          <input type="radio" id="plain" name="type" value="plain">
+          <label for="plain">Plain</label>
+          <br>
+          <input type="radio" id="cherry" name="type" value="cherry">
+          <label for="cherry">Cherry</label>
+          <br>
+          <input type="radio" id="chocolate" name="type" value="chocolate">
+          <label for="chocolate">Chocolate</label>
+        </td>
+      </tr>
+    </table>
+
+   <!-- creates a text box for user to add any additional information -->
+   <form>
+     <label for="notes">Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="50">Enter any special instructions here.</textarea>
+        <br>
+   </form>
+
+   <!-- creates a button (wrapped in a <div> block to make CSS formatting easier) -->
+   <div class="button" id="buttondiv">
+     <input type="button" id="button" value="Order" onclick=buttonClick()>
+   </div>
+
+   <!-- empty labels to fill later onClick with scripts -->
+   <center><label id="lbl1"></label></center>
+   <center><label id="lbl2"></label></center>
+   <center><label id="lbl3"></label></center>
+   <center><label id="lbl4"></label></center>
+   <center><label id="lbl5"></label></center>
+
+   <!-- table to hold "Orders for " + month dropdown widget -->
+   <table id="table2">
+      <tr>
+        <td><h3>Orders for </h3></th>
+        <td>
+          <div class="dropdown">
+              <button class="dropdownButton">Jan</button>
+              <div class="dropdown-content">
+                  <a href="#">Jan</a>
+                  <a href="#">Feb</a>
+                  <a href="#">Mar</a>
+                  <a href="#">Apr</a>
+                  <a href="#">May</a>
+                  <a href="#">Jun</a>
+                  <a href="#">Jul</a>
+                  <a href="#">Aug</a>
+                  <a href="#">Sep</a>
+                  <a href="#">Oct</a>
+                  <a href="#">Nov</a>
+                  <a href="#">Dec</a>
+              </div>
+          </div></th>
+      </tr>
+   </table>
+
+   <!-- creates a bulletted list -->
+   <ul>
+      <!-- the ID's help with POST! -->
+      <li id="li0">11 cherry</li>
+      <li id="li1">17 chocolate</li>
+      <li id="li2">31 plain</li>
+   </ul>
+
+   </body>
+
+   <script src="javascripts/scripts.js"></script>
+
+ </html>

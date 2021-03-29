@@ -1,0 +1,100 @@
+/* Cheesecake CSS          */
+/* Author: Haley Welliver  */
+
+/* formats background (changes color, gets image from file, sizes and positions image  */
+body {
+  background-color: #ffe6ed;
+  background-image: url(https://clipart.info/images/ccovers/1520539443black-border-png-transparent-background.png);
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: center 20px;
+}
+
+/* formats main header (centers it, adds a margin from top of page, changes font, font size, and color)  */
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #b81445;
+  margin-top: 135px;
+}
+
+/* formats cheesecake image (centers it on page)  */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* formats table entries (centers them and changes font)  */
+table {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* formats notes/text box (centers it and changes font)  */
+form {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* formats the <div> block that holds button (changes button font and centers button)  */
+.button {
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+/* formats sub header (changes color and font, centers sub header)  */
+h3 {
+  color: #b81445;
+  font-family: 'Georgia', sans-serif; 
+  text-align: center;
+}
+
+/* formats bulletted list (changes font and centers both bullets and text  */
+ul {
+  font-family: 'Georgia', sans-serif;
+  max-width: 8%; margin: auto;  text-align: left;
+}
+
+
+/* formats month dropdown  */
+.dropdown{
+   text-align: center;
+}
+
+/* formats month dropdown button */
+.dropdownButton{
+   font-size: 18px;
+   font-family: 'Georgia', sans-serif;
+   font-weight: bold;
+   color: #b81445;
+}
+
+/* EXTERNAL CITATION: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* the following CSS formats a hoverable dropdown menu and adds a scrollbar */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow-y: scroll; 
+  height: 130px;
+}
+
+/* formats the content of a hoverable dropdown menu */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
